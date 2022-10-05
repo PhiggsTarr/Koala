@@ -85,11 +85,6 @@ class ViewController: UITableViewController{
         if modelData.type == "text"{
             ViewController.imageCellSelected = false
             if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell{
-                
-                
-                
-                
-                
                 cell.data = model[indexPath.row]
                 return cell
             }
