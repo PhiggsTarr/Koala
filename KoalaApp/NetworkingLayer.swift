@@ -20,7 +20,7 @@ class NetworkingLayer{
             //Do try-catch to load data asynchronously and add elements to our results array
             let (data, _) = try await URLSession.shared.data(for: request)
             
-            var results = try JSONDecoder().decode([ModelData].self, from: data)
+            let results = try JSONDecoder().decode([ModelData].self, from: data)
             
           
             

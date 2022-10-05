@@ -19,19 +19,9 @@ class PictureTableViewCell : UITableViewCell{
             guard let data = data else {
                 return
             }
-            //Continue function if ModelData is not nil
-            
-            
-            //Set name and nickname text labels to be based off JSON data
-            
-//            if data.modelData!.count > 0{
-//                if data.modelData!.contains(".png") || data.modelData!.contains(".jpg"){
                     
                     picture.load(url: URL(string: data.modelData!)!)
                     ImageViewController.imageUrl = URL(string: data.modelData!)
-                    
-//                }
-//            }
         }
     }
 }

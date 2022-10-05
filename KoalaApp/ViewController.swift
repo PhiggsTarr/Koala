@@ -27,12 +27,10 @@ class ViewController: UITableViewController{
         Task {
             //Uses the NetworkingLayer to make the network call and load the model array with the JSON elements
             model = await NetworkingLayer().loadData()
-           // print(model)
             self.tableView.reloadData()
             modelCount = model.count
             ViewController.images = model.filter{$0.type == "image"}
         }
-        
         
         //Sets the navigation bar appearance
         let appearance = UINavigationBarAppearance()
@@ -61,21 +59,11 @@ class ViewController: UITableViewController{
         1
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //Checks to see if TableViewCell is nil and if nil immediately return a UITableViewCell()
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else {
-//            return UITableViewCell()
-//        }
-        //Continue function if tableviewCell is not nil
-        
-        //Sets Cell Data to be equal to the data of the index of the model array
         
         let modelData = model[indexPath.row]
         
         if modelData.type == "image"{
-            ViewController.imageCellSelected = true
             if let cell =  tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath) as? PictureTableViewCell{
-                
-                
                 cell.data = model[indexPath.row]
                 return cell
             }
@@ -83,15 +71,12 @@ class ViewController: UITableViewController{
         }
         
         if modelData.type == "text"{
-            ViewController.imageCellSelected = false
             if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell{
                 cell.data = model[indexPath.row]
                 return cell
             }
             return UITableViewCell()
         }
-        
-        
         return UITableViewCell()
     }
     
@@ -145,9 +130,6 @@ class ViewController: UITableViewController{
                     self.model = self.model.filter{$0.type == "text"}
                     self.tableView.reloadData()
                 }
-                
-                
-                
             }
             self.navigationItem.rightBarButtonItem?.title = "Text"
         }))
@@ -163,16 +145,7 @@ class ViewController: UITableViewController{
         controller.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         present(controller, animated: true, completion: nil)
-        
-        
     }
-}
-
-extension ViewController {
-    //Sets height for tableView row
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        400
-//    }
 }
 
 //Extension to load imageview
@@ -209,41 +182,7 @@ extension UIImageView {
     }
     
 }
-//extension UIImageView {
-//    func load(url: URL, completion: @escaping () -> Void) async {
-//        let session = URLSession(configuration: .default)
-//        let dataTask = session.dataTask(with: url) { data, response, error in
-//            //Checking for error if HTTP timesout or throws an exception error
-//            if error != nil {
-//                DispatchQueue.main.async {
-//                    self.image = #imageLiteral(resourceName: "image-not-found.jpeg")
-//                    completion()
-//                }
-//                return
-//            }
-//            //Checking the response object to check the HTTP status code and set image based on the response code. If we get a response code between 200 and 299 then we have a valid HTTP response for our image and we can load our image from the network call
-//            if let response = response as? HTTPURLResponse {
-//                if 200...299 ~= response.statusCode {
-//                    if let image = UIImage(data: data!) {
-//                        DispatchQueue.main.async {
-//                            self.image = image
-//                            completion()
-//                        }
-//                    }
-//                    //If our HTTP response is outside of the valid range of 200 to 299 then we load our "Photo Not Available" stock photo
-//                } else {
-//                    DispatchQueue.main.async {
-//                        self.image = #imageLiteral(resourceName: "image-not-found copy.jpeg")
-//                        completion()
-//                    }
-//                    return
-//                }
-//            }
-//        }
-//        dataTask.resume()
-//    }
-//
-//Shows the loading indicator in case user scrolls to a picture before it fully loads
+
 var activityIndicator: UIActivityIndicatorView {
     let indicator = UIActivityIndicatorView(style: .medium)
     return indicator

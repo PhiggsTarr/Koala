@@ -13,7 +13,6 @@ class TableViewCell: UITableViewCell {
     //Outlets for tableviewCell elements based off of JSON Data
     
     @IBOutlet var id: UILabel!
-//    @IBOutlet weak var imgData: UIImageView!
     
     @IBOutlet weak var date: UILabel!
     @IBOutlet var type: UILabel!
@@ -27,46 +26,18 @@ class TableViewCell: UITableViewCell {
                 return
             }
             
-            if data.type == "other" {
-                print("N \(String(describing: data.modelData))")
-                return }
-            
-            print(data.type)
-            //Continue function if ModelData is not nil
-            
             //if ModelData is not nil set labelText to be able to indent long names by having 0 number of lines
             id.numberOfLines = 0
             type.numberOfLines = 0
             date.numberOfLines = 0
             modelText.numberOfLines = 0
             
-            //Set name and nickname text labels to be based off JSON data
+            //Set text labels to be based off JSON data
             
             id.text = data.id
             type.text = data.type
             date.text = data.date
             modelText.text = data.modelData
-            
-//            if type.text == "image"{
-//                 if data.modelData!.count > 0{
-//                     if data.modelData!.contains(".png") || data.modelData!.contains(".jpg"){
-//                         print(data.modelData!)
-//
-//                         imgData.load(url: URL(string: data.modelData!)!)
-//                     }
-//                     else{
-//                         //imgData.image = #imageLiteral(resourceName: "image-not-found copy.jpeg")
-//                     }
-//                 }
-//                imgData.load(url:  URL(string: data.imgData ?? <#default value#>))
-////                Task{
-//                    await
-                        
-                       // self?.activityIndicator.stopAnimating()
-//                    }
-//            else{
-//                imgData.image = #imageLiteral(resourceName: "image-not-found copy.jpeg")
-//            }
             
             if let validDate = data.date{
                 if !validDate.isEmpty{
@@ -76,19 +47,6 @@ class TableViewCell: UITableViewCell {
                     date.text = "Date Not Available"
                 }
             }
-            
-         //   self.accessibilityIdentifier = data.name
-            //Check to see if URL is valid before animating the activity indicator
-//            if let url = URL(string: data.data) {
-//                activityIndicator.startAnimating()
-//                
-//                Task{
-//                    await imgData.load(url:  url) {[weak self] in
-//                        
-//                        self?.activityIndicator.stopAnimating()
-//                    }
-//                }
-//            }
         }
     }
     
