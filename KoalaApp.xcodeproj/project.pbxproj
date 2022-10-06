@@ -13,15 +13,35 @@
 		B55AD04328D9162300DE6CE2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD04228D9162300DE6CE2 /* TableViewCell.swift */; };
 		B55AD04528E147B500DE6CE2 /* image-not-found copy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B55AD04428E147B400DE6CE2 /* image-not-found copy.jpeg */; };
 		B58A517C28ECF8740024CA4A /* image-not-found.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B58A517B28ECF8740024CA4A /* image-not-found.jpeg */; };
+		B5B73E6728EE5BD700F1E396 /* KoalaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B73E6628EE5BD700F1E396 /* KoalaAppTests.swift */; };
+		B5B73E7428EE5BE800F1E396 /* KoalaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B73E7328EE5BE800F1E396 /* KoalaAppUITests.swift */; };
+		B5B73E7628EE5BE800F1E396 /* KoalaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B73E7528EE5BE800F1E396 /* KoalaAppUITestsLaunchTests.swift */; };
 		B5C48D5628D8E8ED00931D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C48D5528D8E8ED00931D2E /* AppDelegate.swift */; };
 		B5C48D5828D8E8ED00931D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C48D5728D8E8ED00931D2E /* SceneDelegate.swift */; };
 		B5C48D5A28D8E8ED00931D2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C48D5928D8E8ED00931D2E /* ViewController.swift */; };
 		B5C48D5D28D8E8ED00931D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C48D5B28D8E8ED00931D2E /* Main.storyboard */; };
 		B5C48D5F28D8E8F000931D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C48D5E28D8E8F000931D2E /* Assets.xcassets */; };
 		B5C48D6228D8E8F000931D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C48D6028D8E8F000931D2E /* LaunchScreen.storyboard */; };
-		B5EA1E6128EA592A008AC94D /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA1E6028EA592A008AC94D /* ImageTableViewCell.swift */; };
+		B5EA1E6128EA592A008AC94D /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA1E6028EA592A008AC94D /* PictureTableViewCell.swift */; };
 		B5EA1E6528EA5E99008AC94D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA1E6428EA5E99008AC94D /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5B73E6828EE5BD700F1E396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C48D4A28D8E8ED00931D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C48D5128D8E8ED00931D2E;
+			remoteInfo = KoalaApp;
+		};
+		B5B73E7728EE5BE800F1E396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C48D4A28D8E8ED00931D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C48D5128D8E8ED00931D2E;
+			remoteInfo = KoalaApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B55AD03C28D8EA7700DE6CE2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -30,6 +50,11 @@
 		B55AD04228D9162300DE6CE2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B55AD04428E147B400DE6CE2 /* image-not-found copy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-not-found copy.jpeg"; sourceTree = "<group>"; };
 		B58A517B28ECF8740024CA4A /* image-not-found.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-not-found.jpeg"; sourceTree = "<group>"; };
+		B5B73E6428EE5BD700F1E396 /* KoalaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoalaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B73E6628EE5BD700F1E396 /* KoalaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoalaAppTests.swift; sourceTree = "<group>"; };
+		B5B73E7128EE5BE800F1E396 /* KoalaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoalaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B73E7328EE5BE800F1E396 /* KoalaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoalaAppUITests.swift; sourceTree = "<group>"; };
+		B5B73E7528EE5BE800F1E396 /* KoalaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoalaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5C48D5228D8E8ED00931D2E /* KoalaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoalaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C48D5528D8E8ED00931D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C48D5728D8E8ED00931D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,11 +63,25 @@
 		B5C48D5E28D8E8F000931D2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C48D6128D8E8F000931D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C48D6328D8E8F000931D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5EA1E6028EA592A008AC94D /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		B5EA1E6028EA592A008AC94D /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
 		B5EA1E6428EA5E99008AC94D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B5B73E6128EE5BD700F1E396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B73E6E28EE5BE800F1E396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C48D4F28D8E8ED00931D2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +92,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5B73E6528EE5BD700F1E396 /* KoalaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B73E6628EE5BD700F1E396 /* KoalaAppTests.swift */,
+			);
+			path = KoalaAppTests;
+			sourceTree = "<group>";
+		};
+		B5B73E7228EE5BE800F1E396 /* KoalaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B73E7328EE5BE800F1E396 /* KoalaAppUITests.swift */,
+				B5B73E7528EE5BE800F1E396 /* KoalaAppUITestsLaunchTests.swift */,
+			);
+			path = KoalaAppUITests;
+			sourceTree = "<group>";
+		};
 		B5C48D4928D8E8ED00931D2E = {
 			isa = PBXGroup;
 			children = (
 				B5C48D5428D8E8ED00931D2E /* KoalaApp */,
+				B5B73E6528EE5BD700F1E396 /* KoalaAppTests */,
+				B5B73E7228EE5BE800F1E396 /* KoalaAppUITests */,
 				B5C48D5328D8E8ED00931D2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				B5C48D5228D8E8ED00931D2E /* KoalaApp.app */,
+				B5B73E6428EE5BD700F1E396 /* KoalaAppTests.xctest */,
+				B5B73E7128EE5BE800F1E396 /* KoalaAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +142,7 @@
 				B5C48D5B28D8E8ED00931D2E /* Main.storyboard */,
 				B55AD04028D9142400DE6CE2 /* DetailViewController.swift */,
 				B55AD04228D9162300DE6CE2 /* TableViewCell.swift */,
-				B5EA1E6028EA592A008AC94D /* ImageTableViewCell.swift */,
+				B5EA1E6028EA592A008AC94D /* PictureTableViewCell.swift */,
 				B5EA1E6428EA5E99008AC94D /* ImageViewController.swift */,
 				B5C48D5E28D8E8F000931D2E /* Assets.xcassets */,
 				B5C48D6028D8E8F000931D2E /* LaunchScreen.storyboard */,
@@ -94,6 +154,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B5B73E6328EE5BD700F1E396 /* KoalaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B73E6A28EE5BD700F1E396 /* Build configuration list for PBXNativeTarget "KoalaAppTests" */;
+			buildPhases = (
+				B5B73E6028EE5BD700F1E396 /* Sources */,
+				B5B73E6128EE5BD700F1E396 /* Frameworks */,
+				B5B73E6228EE5BD700F1E396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B73E6928EE5BD700F1E396 /* PBXTargetDependency */,
+			);
+			name = KoalaAppTests;
+			productName = KoalaAppTests;
+			productReference = B5B73E6428EE5BD700F1E396 /* KoalaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5B73E7028EE5BE800F1E396 /* KoalaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B73E7928EE5BE800F1E396 /* Build configuration list for PBXNativeTarget "KoalaAppUITests" */;
+			buildPhases = (
+				B5B73E6D28EE5BE800F1E396 /* Sources */,
+				B5B73E6E28EE5BE800F1E396 /* Frameworks */,
+				B5B73E6F28EE5BE800F1E396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B73E7828EE5BE800F1E396 /* PBXTargetDependency */,
+			);
+			name = KoalaAppUITests;
+			productName = KoalaAppUITests;
+			productReference = B5B73E7128EE5BE800F1E396 /* KoalaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B5C48D5128D8E8ED00931D2E /* KoalaApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C48D6628D8E8F000931D2E /* Build configuration list for PBXNativeTarget "KoalaApp" */;
@@ -121,6 +217,14 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					B5B73E6328EE5BD700F1E396 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B5C48D5128D8E8ED00931D2E;
+					};
+					B5B73E7028EE5BE800F1E396 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B5C48D5128D8E8ED00931D2E;
+					};
 					B5C48D5128D8E8ED00931D2E = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -140,11 +244,27 @@
 			projectRoot = "";
 			targets = (
 				B5C48D5128D8E8ED00931D2E /* KoalaApp */,
+				B5B73E6328EE5BD700F1E396 /* KoalaAppTests */,
+				B5B73E7028EE5BE800F1E396 /* KoalaAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B5B73E6228EE5BD700F1E396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B73E6F28EE5BE800F1E396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C48D5028D8E8ED00931D2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,13 +280,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B5B73E6028EE5BD700F1E396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B73E6728EE5BD700F1E396 /* KoalaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B73E6D28EE5BE800F1E396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B73E7628EE5BE800F1E396 /* KoalaAppUITestsLaunchTests.swift in Sources */,
+				B5B73E7428EE5BE800F1E396 /* KoalaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C48D4E28D8E8ED00931D2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5C48D5A28D8E8ED00931D2E /* ViewController.swift in Sources */,
 				B5EA1E6528EA5E99008AC94D /* ImageViewController.swift in Sources */,
-				B5EA1E6128EA592A008AC94D /* ImageTableViewCell.swift in Sources */,
+				B5EA1E6128EA592A008AC94D /* PictureTableViewCell.swift in Sources */,
 				B55AD03D28D8EA7700DE6CE2 /* ModelData.swift in Sources */,
 				B55AD03F28D8EABB00DE6CE2 /* NetworkingLayer.swift in Sources */,
 				B55AD04128D9142400DE6CE2 /* DetailViewController.swift in Sources */,
@@ -177,6 +314,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5B73E6928EE5BD700F1E396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C48D5128D8E8ED00931D2E /* KoalaApp */;
+			targetProxy = B5B73E6828EE5BD700F1E396 /* PBXContainerItemProxy */;
+		};
+		B5B73E7828EE5BE800F1E396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C48D5128D8E8ED00931D2E /* KoalaApp */;
+			targetProxy = B5B73E7728EE5BE800F1E396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5C48D5B28D8E8ED00931D2E /* Main.storyboard */ = {
@@ -198,6 +348,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B5B73E6B28EE5BD700F1E396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343NX53M5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdInventions.KoalaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoalaApp.app/KoalaApp";
+			};
+			name = Debug;
+		};
+		B5B73E6C28EE5BD700F1E396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343NX53M5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdInventions.KoalaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoalaApp.app/KoalaApp";
+			};
+			name = Release;
+		};
+		B5B73E7A28EE5BE800F1E396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343NX53M5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdInventions.KoalaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoalaApp;
+			};
+			name = Debug;
+		};
+		B5B73E7B28EE5BE800F1E396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343NX53M5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdInventions.KoalaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoalaApp;
+			};
+			name = Release;
+		};
 		B5C48D6428D8E8F000931D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,6 +591,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B5B73E6A28EE5BD700F1E396 /* Build configuration list for PBXNativeTarget "KoalaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B73E6B28EE5BD700F1E396 /* Debug */,
+				B5B73E6C28EE5BD700F1E396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B73E7928EE5BE800F1E396 /* Build configuration list for PBXNativeTarget "KoalaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B73E7A28EE5BE800F1E396 /* Debug */,
+				B5B73E7B28EE5BE800F1E396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5C48D4D28D8E8ED00931D2E /* Build configuration list for PBXProject "KoalaApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

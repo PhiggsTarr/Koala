@@ -82,7 +82,8 @@ class ViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(model[indexPath.row].modelData!)
+        print(model[indexPath.row].id)
+        
         ImageViewController.imageUrl = URL(string: model[indexPath.row].modelData!)
         //Sets the image for the row the user selected to be the imageData for the detail view
     }
@@ -161,6 +162,7 @@ extension UIImageView {
                 }
                 return
             }
+            
             //Checking the response object to check the HTTP status code and set image based on the response code. If we get a response code between 200 and 299 then we have a valid HTTP response for our image and we can load our image from the network call
             if let response = response as? HTTPURLResponse {
                 if 200...299 ~= response.statusCode {

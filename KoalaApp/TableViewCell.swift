@@ -37,7 +37,14 @@ class TableViewCell: UITableViewCell {
             id.text = data.id
             type.text = data.type
             date.text = data.date
-            modelText.text = data.modelData
+            let modelDataCount = data.modelData?.count ?? 0
+            
+            if modelDataCount == 0{
+                modelText.text = "Empty"
+            }else{
+                modelText.text = data.modelData
+            }
+            
             
             if let validDate = data.date{
                 if !validDate.isEmpty{

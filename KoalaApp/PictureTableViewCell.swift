@@ -21,6 +21,7 @@ class PictureTableViewCell : UITableViewCell{
             }
                     
                     picture.load(url: URL(string: data.modelData!)!)
+            picture.accessibilityIdentifier = data.id
                     ImageViewController.imageUrl = URL(string: data.modelData!)
         }
     }
