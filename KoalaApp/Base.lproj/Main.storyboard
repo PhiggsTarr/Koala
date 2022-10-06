@@ -169,38 +169,25 @@
             </objects>
             <point key="canvasLocation" x="1771" y="98"/>
         </scene>
-        <!--Image View Controller-->
+        <!--Picture View Controller-->
         <scene sceneID="jfE-2T-f2d">
             <objects>
-                <viewController id="ky3-Kn-cdW" customClass="ImageViewController" customModule="KoalaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ky3-Kn-cdW" customClass="PictureViewController" customModule="KoalaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MWT-Wh-lpz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8c2-vK-BOn">
-                                <rect key="frame" x="87" y="338" width="240" height="284"/>
+                                <rect key="frame" x="52" y="240" width="310" height="416"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sND-O2-4tw">
-                                <rect key="frame" x="87" y="175" width="209" height="58"/>
-                                <accessibility key="accessibilityConfiguration" identifier="detailNameLabel"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="hGP-Fa-4cc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="crr-Q4-XVB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8c2-vK-BOn" firstAttribute="leading" secondItem="crr-Q4-XVB" secondAttribute="leading" constant="87" id="1CW-Jk-jsE"/>
-                            <constraint firstItem="crr-Q4-XVB" firstAttribute="bottom" secondItem="8c2-vK-BOn" secondAttribute="bottom" constant="240" id="3yF-GA-4TO"/>
-                            <constraint firstItem="crr-Q4-XVB" firstAttribute="trailing" secondItem="sND-O2-4tw" secondAttribute="trailing" constant="118" id="GrX-S9-XS7"/>
-                            <constraint firstItem="8c2-vK-BOn" firstAttribute="centerX" secondItem="MWT-Wh-lpz" secondAttribute="centerX" id="VMq-uU-i8Z"/>
-                            <constraint firstItem="8c2-vK-BOn" firstAttribute="top" secondItem="crr-Q4-XVB" secondAttribute="top" constant="250" id="Ygi-zL-wUA"/>
-                            <constraint firstItem="sND-O2-4tw" firstAttribute="leading" secondItem="8c2-vK-BOn" secondAttribute="leading" id="mBv-P1-dmm"/>
-                            <constraint firstItem="sND-O2-4tw" firstAttribute="top" secondItem="crr-Q4-XVB" secondAttribute="top" constant="87" id="nsU-Pf-XXS"/>
+                            <constraint firstItem="8c2-vK-BOn" firstAttribute="centerY" secondItem="MWT-Wh-lpz" secondAttribute="centerY" id="218-o6-sIe"/>
+                            <constraint firstItem="8c2-vK-BOn" firstAttribute="leading" secondItem="crr-Q4-XVB" secondAttribute="leading" constant="52" id="InM-wy-BYZ"/>
+                            <constraint firstItem="8c2-vK-BOn" firstAttribute="centerX" secondItem="MWT-Wh-lpz" secondAttribute="centerX" id="WNL-ct-QtR"/>
+                            <constraint firstItem="8c2-vK-BOn" firstAttribute="top" secondItem="crr-Q4-XVB" secondAttribute="top" constant="152" id="jQL-k5-4cE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LmY-yG-uNZ"/>

@@ -16,10 +16,11 @@ class DetailViewController : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            let url = URL (string: "https://koala.io/")
-            let requestObj = URLRequest(url: url!)
+        //Load Website in Webview
+        let url = URL (string: "https://koala.io/")
+        let requestObj = URLRequest(url: url!)
         wView.load(requestObj)
-            
+        
         // Do any additional setup after loading the view.
     }
 }

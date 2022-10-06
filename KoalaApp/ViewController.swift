@@ -32,18 +32,7 @@ class ViewController: UITableViewController{
             ViewController.images = model.filter{$0.type == "image"}
         }
         
-        //Sets the navigation bar appearance
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .black
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.font: UIColor.black]
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "All", style: .plain, target: self, action: #selector(reload))
-        
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        createNavigationBar()
         
         tableView.rowHeight = UITableView.automaticDimension
     }
@@ -58,6 +47,7 @@ class ViewController: UITableViewController{
         //Sets our tableview section to 1 section
         1
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let modelData = model[indexPath.row]
@@ -82,10 +72,8 @@ class ViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(model[indexPath.row].id)
-        
-        ImageViewController.imageUrl = URL(string: model[indexPath.row].modelData!)
         //Sets the image for the row the user selected to be the imageData for the detail view
+        PictureViewController.imageUrl = URL(string: model[indexPath.row].modelData!)
     }
     
     @objc func reload(){
@@ -147,6 +135,21 @@ class ViewController: UITableViewController{
         
         present(controller, animated: true, completion: nil)
     }
+    
+    func createNavigationBar(){
+        //Sets the navigation bar appearance
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.font: UIColor.black]
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "All", style: .plain, target: self, action: #selector(reload))
+        
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
 }
 
 //Extension to load imageview
@@ -185,7 +188,3 @@ extension UIImageView {
     
 }
 
-var activityIndicator: UIActivityIndicatorView {
-    let indicator = UIActivityIndicatorView(style: .medium)
-    return indicator
-}
